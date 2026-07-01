@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pl">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Moje CV</title>
+        <title>My CV</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -17,13 +17,15 @@
         <div class="wrapper">
             <main>
                 <div class="main-description">
-                    <h2 class="job-title">Backend Developer | C# .NET</h2>
+                    <h2 class="job-title">
+                        Backend Developer | C# | ASP.NET Core | .NET
+                    </h2>
                     <h1>Michał Mucik</h1>
                     <p class="description">
-                        Transforming business problems into clean code
-                        solutions. 2 years of intensive learning: Clean
-                        Architecture, DDD, CQRS. Background: Engineering +
-                        Logistics = Business-aware developer.
+                        Backend Developer focused on ASP.NET Core and .NET.
+                        Building warehouse management software based on real
+                        logistics experience using Clean Architecture, CQRS and
+                        Domain-Driven Design.
                     </p>
                 </div>
                 <div class="projects">
@@ -31,74 +33,85 @@
 
                     <!-- Każdy projekt jako osobny div -->
                     <div class="project featured">
-                        <h3>Warehouse Management System API</h3>
+                        <h3>MyWarehouse</h3>
+                        <h4>Warehouse Management System REST API</h4>
                         <p class="description">
-                            Production-ready REST API built with Clean
-                            Architecture and DDD
+                            REST API for warehouse management built with Clean
+                            Architecture, Domain-Driven Design and CQRS.
                         </p>
                         <div class="tech-stack">
-                            <span class="badge">C# 12</span>
-                            <span class="badge">.NET 8</span>
-                            <span class="badge">Clean Architecture</span>
-                            <span class="badge">DDD</span>
-                            <span class="badge">CQRS</span>
-                            <span class="badge">EF Core</span>
-                            <span class="badge">MS Sql</span>
-                            <span class="badge">xUnit</span>
+                            <div class="badge">
+                                C# • .NET • ASP.NET Core • EF Core • SQL Server
+                            </div>
+                            <div class="badge">
+                                Clean Architecture • DDD • CQRS • MediatR
+                            </div>
+                            <div class="badge">
+                                xUnit • GitHub Actions • Azure • Swagger
+                            </div>
                         </div>
                         <ul class="features">
                             <li>
-                                Domain-driven design with aggregates and value
-                                objects
+                                Designed a domain model for receiving,
+                                inventory, picking and shipping workflows.
                             </li>
-                            <li>CQRS pattern using MediatR</li>
-                            <li>Integration tests with TestContainers</li>
-                            <li>RESTful API with Swagger documentation</li>
+                            <li>
+                                Implemented CQRS with MediatR to separate
+                                command and query responsibilities.
+                            </li>
+                            <li>
+                                Created over 300 integration tests covering
+                                business scenarios.
+                            </li>
+                            <li>
+                                Automated build and test verification with
+                                GitHub Actions.
+                            </li>
+                            <li>
+                                Published the application to Microsoft Azure App
+                                Service.
+                            </li>
                         </ul>
-                        <a
-                            class="list-primary-item"
-                            href="https://github.com/MikeMucik/MyWarehouse"
-                            target="_blank"
-                        >
-                            GitHub Repository →
-                        </a>
+                        <p>
+                            <a
+                                class="list-primary-item"
+                                href="https://github.com/MikeMucik/MyWarehouse"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub Repository →
+                            </a>
+                        </p>
+                        <p>
+                            <a
+                                class="list-primary-item"
+                                href="https://mywarehouse-api-hiermet-ffggb2dwe5crh4gq.polandcentral-01.azurewebsites.net/swagger.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Swagger (Azure) →
+                            </a>
+                        </p>
                     </div>
 
                     <div class="project">
                         <h3>RecipeBook MVC</h3>
                         <p class="description">
-                            Web app for managing recipes with ingredients search
+                            ASP.NET Core MVC application for recipe management
+                            with authentication and Entity Framework Core.
                         </p>
-                        <div class="tech-stack">
-                            <span class="badge">C# 12</span>
-                            <span class="badge">.NET 8</span>
-                            <span class="badge">ASP.NET MVC</span>
-                            <span class="badge">HTML5</span>
-                            <span class="badge">CSS3</span>
-                        </div>
+                        <ul class="features">
+                            <li>
+                                ASP.NET Core Identity authentication and
+                                authorization.
+                            </li>
+                            <li>Entity Framework Core with SQL Server.</li>
+                        </ul>
                         <a
                             class="list-primary-item"
                             href="https://github.com/MikeMucik/CopyRecipeBookMVC"
                             target="_blank"
-                        >
-                            GitHub Repository →
-                        </a>
-                    </div>
-
-                    <div class="project">
-                        <h3>Portfolio CV</h3>
-                        <p class="description">
-                            This website - built with semantic HTML5 and modern
-                            CSS3
-                        </p>
-                        <div class="tech-stack">
-                            <span class="badge">HTML5</span>
-                            <span class="badge">CSS3</span>
-                        </div>
-                        <a
-                            class="list-primary-item"
-                            href="https://github.com/MikeMucik/CV-BackendDeveloper"
-                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             GitHub Repository →
                         </a>
@@ -108,59 +121,70 @@
                     <h2 class="header-primary">Work Experience</h2>
                     <h3 class="job-name">
                         Software Developer
-                        <span class="highlight"> Self-Employed</span>
+                        <span class="highlight"> Self-employed</span>
                     </h3>
                     <p class="job-date">2024 - Present | Poland</p>
                     <ul class="job-list">
                         <li>
-                            Built WMS REST API using Clean Architecture and DDD
+                            Built and deployed a warehouse management REST API
+                            using ASP.NET Core, Clean Architecture and DDD.
                         </li>
-                        <li>Implemented CQRS pattern with MediatR</li>
-                        <li>Integration tests with TestContainers and xUnit</li>
-                        <li>Created MVC web app for recipe management</li>
+                        <li>
+                            Implemented CQRS-based application workflows with
+                            MediatR and EF Core.
+                        </li>
+                        <li>
+                            Created over 300 integration tests and configured
+                            GitHub Actions for automated build and test
+                            verification.
+                        </li>
                     </ul>
-                    <h3 class="job-name">
-                        Warehouse Operations
-                        <span class="highlight"> Fiege, Pago/Lineage</span>
-                    </h3>
-                    <p class="job-date">2019 - Present | Poland</p>
+                    <h3 class="job-name">Warehouse & Logistics Operations</h3>
+                    <p class="job-date">
+                        2004 - Present | Poland, the Netherlands, USA
+                    </p>
                     <ul class="job-list">
                         <li>
-                            WMS systems daily user - domain expertise for API
-                            project
+                            Over 20 years of experience in warehouse logistics,
+                            inventory management and distribution.
                         </li>
-                        <li>Picking, packing, shipping process knowledge</li>
+                        <li>
+                            Managed pallet purchasing operations and worked
+                            across multiple logistics environments.
+                        </li>
+                        <li>
+                            Daily user of Warehouse Management Systems (WMS),
+                            applying operational knowledge directly to backend
+                            system design.
+                        </li>
+                        <li>
+                            Practical experience with receiving, storage,
+                            picking, packing and shipping processes.
+                        </li>
                     </ul>
+                    <h3 class="job-name">Surveying</h3>
+                    <p class="job-date">2007 - 2011</p>
+                    <ul class="job-list">
+                        <li>Field surveying and engineering measurements.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="header-primary">Education</h2>
+                    <h3 class="job-name">
+                        <span class="highlight">Silesian University</span>
+                    </h3>
+                    <h4 class="management">Geology</h4>
 
                     <h3 class="job-name">
-                        Previous Roles
-                        <span class="highlight"> Various companies</span>
+                        <span class="highlight"
+                            >AGH University of Science and Technology</span
+                        >
                     </h3>
-                    <p class="job-date">2007 - 2019 | Poland & Netherlands</p>
-                    <ul class="job-list">
-                        <li>Surveyor - geodesy field work (AGH background)</li>
-                        <li>Warehouse operations across multiple companies</li>
-                    </ul>
-                    <div>
-                        <h2 class="header-primary">Education</h2>
-                        <h3 class="job-name">
-                            <span class="highlight">Silesian University</span>
-                        </h3>
-                        <h4 class="management">Geology</h4>
-
-                        <h3 class="job-name">
-                            <span class="highlight"
-                                >AGH University of Science and Technology</span
-                            >
-                        </h3>
-                        <h4 class="management">Geodesy</h4>
-                        <h3 class="job-name">
-                            <span class="highlight"
-                                >Self-Directed Learning</span
-                            >
-                        </h3>
-                        <h4 class="management">BackendDeveloper C#, .NET</h4>
-                    </div>
+                    <h4 class="management">Geodesy</h4>
+                    <h3 class="job-name">
+                        <span class="highlight">Self-Directed Learning</span>
+                    </h3>
+                    <h4 class="management">Backend Developer, C#, .NET</h4>
                 </div>
             </main>
             <aside>
@@ -168,14 +192,14 @@
                     class="cv-photo"
                     src="photo1.jpg"
                     width="370"
-                    alt="zdjęcie Johna DOE w cv"
+                    alt="photo of Michal Mucik"
                 />
-                <div class="contack-block">
+                <div class="contact-block">
                     <h2 class="header-secondary">Contacts</h2>
 
                     <p class="contact-links">
                         <span class="bold">C:</span>
-                        <a class="contact-links" href="tel:+48 668 376 545">
+                        <a class="contact-links" href="tel:+48668376545">
                             +48 668 376 545
                         </a>
                         <br />
@@ -191,91 +215,32 @@
                 <div class="tech-skills-block">
                     <h2 class="header-secondary">Tech skills</h2>
                     <div class="skills-section">
-                        <h3>Core Technologies</h3>
-                        <div class="skill-grid">
-                            <div class="skill-item">
-                                <span>C# 12</span>
-                                <div
-                                    class="skill-level"
-                                    data-level="advanced"
-                                ></div>
-                            </div>
-                            <div class="skill-item">
-                                <span>.NET 8</span>
-                                <div
-                                    class="skill-level"
-                                    data-level="advanced"
-                                ></div>
-                            </div>
-                            <div class="skill-item">
-                                <span>ASP.NET Core</span>
-                                <div
-                                    class="skill-level"
-                                    data-level="advanced"
-                                ></div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Entity Framework Core</span>
-                                <div
-                                    class="skill-level"
-                                    data-level="intermediate"
-                                ></div>
-                            </div>
-                            <div class="skill-item">
-                                <span>MS SQL</span>
-                                <div
-                                    class="skill-level"
-                                    data-level="intermediate"
-                                ></div>
-                            </div>
-                        </div>
-
-                        <h3>Architectural Patterns</h3>
+                        <h3>Languages</h3>
                         <ul class="pattern-list">
-                            <li>
-                                ✓ Clean Architecture (Domain, Application,
-                                Infrastructure)
-                            </li>
-                            <li>
-                                ✓ Domain-Driven Design (Aggregates, Value
-                                Objects, Events)
-                            </li>
-                            <li>
-                                ✓ CQRS (Command Query Responsibility
-                                Segregation)
-                            </li>
-                            <li>✓ Repository + Unit of Work</li>
-                            <li>✓ Dependency Injection</li>
+                            <li>C#</li>
+                            <li>SQL</li>
                         </ul>
-
-                        <h3>Testing & Quality</h3>
-                        <div class="skill-grid">
-                            <div class="skill-item">
-                                <span>xUnit</span>
-                            </div>
-                            <div class="skill-item">
-                                <span>Integration Testing</span>
-                            </div>
-                            <div class="skill-item">
-                                <span>Test Containers</span>
-                            </div>
-                            <div class="skill-item">
-                                <span>Moq</span>
-                            </div>
-                        </div>
-
-                        <h3>Tools & DevOps</h3>
-                        <div class="skill-grid">
-                            <div class="skill-item">
-                                <span>Git & GitHub</span>
-                            </div>
-                            <div class="skill-item">
-                                <span>CI/CD (GitHub Actions)</span>
-                            </div>
-                            <div class="skill-item">
-                                <span>Swagger/OpenAPI</span>
-                            </div>
-                        </div>
+                        <h3>Frameworks</h3>
+                        <ul class="pattern-list">
+                            <li>.NET</li>
+                            <li>ASP.NET Core</li>
+                            <li>EF Core</li>
+                        </ul>
+                        <h3>Architecture</h3>
+                        <ul class="pattern-list">
+                            <li>Clean Architecture</li>
+                            <li>DDD</li>
+                            <li>CQRS</li>
+                            <li>MediatR</li>
+                        </ul>
+                        <h3>Testing & Tools</h3>
+                        <ul class="pattern-list">
+                            <li>xUnit</li>
+                            <li>GitHub Actions</li>
+                            <li>Git</li>
+                            <li>Azure</li>
+                            <li>Swagger</li>
+                        </ul>
                     </div>
                 </div>
             </aside>

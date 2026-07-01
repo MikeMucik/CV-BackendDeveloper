@@ -127,17 +127,19 @@ h1 {
 
 @page {
     size: A4;
-    margin: 0;
+    margin: 10mm;
 }
 
 @media print {
-    body {
-        background: #ffffff;
-    }
-
     .wrapper {
-        width: 210mm;
+        width: 100%;
         max-width: none;
         box-shadow: none;
+    }
+    aside {
+        flex-basis: 60mm;
+    }
+    main {
+        padding: 8mm;
     }
 }
